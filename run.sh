@@ -1,8 +1,8 @@
 #! /bin/bash
 
-for f in ligand_*.pdbqt; do
+for f in ./ligands/ligand_*.pdbqt; do
 	b=`basename $f .pdbqt`
 	echo Proccessing ligand $b
-	mkdir -p $b
-	vina --config conf.txt --ligand $f --out ${b}/out.pdbqt --log ${b}/log.txt
+	mkdir -p ./dist/$b
+	vina --config conf.txt --ligand $f --out ./dist/${b}/out.pdbqt --log ./dist/${b}/log.txt
 done

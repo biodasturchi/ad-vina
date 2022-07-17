@@ -1,0 +1,1 @@
+Autodock Vina orqali ligand-oqsil mexanizmini ko'rish
